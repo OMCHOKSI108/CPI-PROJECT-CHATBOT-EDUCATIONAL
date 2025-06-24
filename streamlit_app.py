@@ -20,6 +20,7 @@ def to_markdown(text):
   text = text.replace('•', '  *')
   return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
 
+GOOGLE_API_KEY = "AIzaSyC7tOqv0SY42J58lhgEw2PXHdKcWoQw0Gc"
 os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
